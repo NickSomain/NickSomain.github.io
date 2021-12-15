@@ -5,6 +5,10 @@
 	font-weight: normal;
 }
 
+span {
+	color: black;
+}
+
 body {
 	background: #11131a;
 	font-family: monospace;
