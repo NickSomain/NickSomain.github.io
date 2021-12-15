@@ -1,0 +1,339 @@
+@font-face {
+	font-family: "Datcub";
+	src: url("C:/Users/n1546/OneDrive/Документы/Институт/Разработка_клиент-серверных_частей_интернет_ресурсов/Курсовая работа/DatCub/Datcub.ttf");
+	font-style: normal; 
+	font-weight: normal;
+}
+
+.pictures {
+
+		border-radius: 15px;
+		float: left;
+		margin-right: 20px;
+		margin-bottom: 20px;
+
+}
+
+body {
+	background: #11131a;
+	font-family: monospace;
+	font-size: 20px;
+}
+
+h2, h3, p {
+
+	color: #7c797f;
+	
+}
+
+p {
+	font-size: 25px;
+}
+
+button {
+  display: none;
+  margin: 0;
+  padding: 0;
+
+  border: 0;
+  outline: 0;
+  background: none;
+
+  font-size: inherit;
+  font-family: inherit;
+
+  cursor: pointer;
+}
+
+.outer_box {
+	margin: auto;
+
+	background: #212538;
+
+	max-width: 900px;
+
+	padding-bottom: 130px;
+
+	border-radius: 25px;
+	box-shadow: inset 0 0 3px 2px #0a0a0d;
+}
+
+.headerPic {
+	height: 300px;
+	width: 521px;
+
+	border-radius: 25px;
+}
+
+.headerPicBox {
+	height: 300px;
+	width: 521px;
+
+	border-radius: 25px;
+
+	position: relative;
+	left: 190px;
+	top: 150px;
+
+	box-shadow: 0 0 3px 2px #0d0c0c;
+}
+
+.glassName {
+	padding: 10px;
+
+	font-family: "Datcub";
+	font-size: 60px;
+
+	position: relative;
+	bottom: 250px;
+	left: 105px;
+
+	border-radius: 25px;
+
+	width: 300px;
+	height: 150px;
+
+	background-color: #ffffff10;
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+}
+
+.navigationBar {
+	position: relative;
+	bottom: 275px;
+
+	display: flex;
+	justify-content: space-around;
+
+
+	height: 100px;
+	width: 521px;
+
+	margin-left: auto;
+	margin-right: auto;
+
+	border-radius: 25px;
+
+	background-color: #ffffff10;
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+}
+
+.nav2 {
+
+	display: none;
+
+}
+
+.glassbox {
+
+	display: flex;
+	flex-direction: column;
+
+	justify-content: flex-start;
+	align-items: center;
+
+	position: relative;
+	top: 100px;
+
+	padding: 10px;
+
+	width: 800px;
+
+	margin-right: auto;
+	margin-left: auto;
+
+	border-radius: 25px;
+
+	background-color: #ffffff10;
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+
+	box-shadow: inset 0 0 3px 1px #0a0a0d;
+
+}
+
+.outer_box1 {
+
+	display: flex;
+	flex-direction: column;
+
+	justify-content: flex-start;
+	align-items: center;
+
+	margin: 20px;
+
+	width: 700px;
+
+	border-radius: 25px;
+
+	background-color: #212538;
+	box-shadow: inset 0 0 3px 1px #0a0a0d;
+
+}
+
+.text {
+
+	padding: 10px;
+	
+}
+
+th, td {
+	height: 25px;
+	width: 25px;
+	background-color: green;
+}
+
+a > img {
+
+	border-radius: 15px;
+	margin-top: 15px;
+	width: 70px; 
+	height: 70px;
+	transition: 0.5s;
+
+}
+
+a > img:hover {
+
+	transform: scale(1.1);
+	transition: 0.5s;
+
+}
+
+@media (max-width: 768px) {
+
+	h2 {
+		font-size: 25px;
+	}
+
+	.headerPicBox {
+		position: relative;
+		top: 40px;
+		left: 43px;
+	}
+
+	.outer_box {
+
+		width: 700px;
+		margin-left: auto;
+		margin-right: auto;
+
+	}
+
+	.outer_box1 {
+
+		width: 550px;
+
+	}
+
+	.glassbox {
+
+		width: 600px;
+
+	}
+
+
+	.menu-bar {
+		position: absolute;
+	}
+
+	.burger {
+		display: block;
+		font-size: 0;
+
+    	position: relative;
+    	top: -230px;
+    	left: 610px;
+    	width: 35px;
+   	 	height: 3px;
+
+    	background-color: #11131a;
+	}
+
+	.burger.active {
+    	background-color: rgba(17, 19, 26, 0);
+  	}
+
+  	.burger.active::before,
+  	.burger.active::after {
+    	content: "";
+    	display: block;
+
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+
+    	width: 100%;
+    	height: 3px;
+
+    	background-color: #eb752e;
+  	}
+
+  	.burger.active::before {
+    	transform: rotate(45deg);
+  	}
+
+  	.burger.active::after {
+    	transform: rotate(-45deg);
+  	}
+
+  	.burger::before,
+  	.burger::after {
+    	content: "";
+    	display: block;
+
+    	position: absolute;
+
+    	width: 100%;
+    	height: 3px;
+
+    	background-color: #11131a;
+    	transition: transform 0.2s linear,
+               	 	background-color 0.2s linear;
+  	}
+
+  	.burger::before {
+    	top: -8px;
+    	left: 0;
+  	}
+
+  	.burger::after {
+    	bottom: -8px;
+    	right: 0;
+  	}
+
+	.nav1 {
+
+		display: none;
+
+	}
+
+	.nav2.active {
+
+		display: block;
+
+		position: relative;
+		bottom: 220px;
+		left: 590px;
+
+	}
+
+	.nav_link {
+    	display: block;
+    	text-align: center;
+
+    	margin-left: 0;
+    	padding: 8px 12px;
+  }
+
+  	a > img {
+
+		border-radius: 15px;
+		margin-top: 5px;
+		width: 50px; 
+		height: 50px;
+		transition: 0.5s;
+
+	}
+}

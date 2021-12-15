@@ -1,0 +1,228 @@
+@font-face {
+	font-family: "Datcub";
+	src: url("C:/Users/n1546/OneDrive/Документы/Институт/Разработка_клиент-серверных_частей_интернет_ресурсов/Курсовая работа/DatCub/Datcub.ttf");
+	font-style: normal; 
+	font-weight: normal;
+}
+
+body {
+	background: #11131a;
+	font-family: monospace;
+	font-size: 20px;
+}
+
+.outer_box {
+	margin: auto;
+
+	background: #212538;
+
+	max-width: 900px;
+	min-height: 600px;
+
+	border-radius: 25px;
+	box-shadow: inset 0 0 3px 2px #0a0a0d;
+}
+
+.headerPic {
+	height: 300px;
+	width: 521px;
+
+	border-radius: 25px;
+}
+
+.headerPicBox {
+	height: 300px;
+	width: 521px;
+
+	border-radius: 25px;
+
+	position: relative;
+	left: 190px;
+	top: 50px;
+
+	box-shadow: 0 0 3px 2px #0d0c0c;
+}
+
+.glassName {
+	padding: 10px;
+	justify-content: center;
+
+	font-family: "Datcub";
+	font-size: 60px;
+
+	position: relative;
+	bottom: 250px;
+	left: 105px;
+
+	border-radius: 25px;
+
+	width: 300px;
+	height: 150px;
+
+	background-color: #ffffff10;
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+}
+
+.navigationBar {
+	position: relative;
+	top: 150px;
+
+	display: flex;
+	justify-content: space-around;
+
+
+	height: 100px;
+	width: 521px;
+	margin-left: auto;
+	margin-right: auto;
+
+	border-radius: 25px;
+
+	background-color: #ffffff10;
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+}
+
+th, td {
+	height: 25px;
+	width: 25px;
+	background-color: green;
+}
+
+a > img {
+
+	border-radius: 15px;
+	margin-top: 15px;
+	transition: 0.5s;
+	width: 70px;
+	height: 70px;
+
+}
+
+a > img:hover {
+
+	transform: scale(1.1);
+	transition: 0.5s;
+
+}
+
+@media (max-width: 768px) {
+
+	.headerPicBox {
+		position: relative;
+		left: 115px;
+		width: 280px;
+	}
+
+	.navigationBar {
+		height: 621px;
+		width: 621px;
+		padding: 20px;
+		flex-wrap: wrap;
+	}
+
+	a > img {
+		width: 270px;
+		height: 270px;
+	}
+
+	.outer_box {
+		height: 1150px;
+	}
+
+}
+
+@media (max-width: 426px) {
+
+	.headerPicBox {
+		position: relative;
+		left: 5px;
+		top: 0px;
+		width: 400px;
+		height: 230px;
+	}
+
+	.headerPic {
+		width: 400px;
+		height: 230px;
+	}
+
+	.navigationBar {
+		position: relative;
+		top: 40px;
+		height: 800px;
+		width: 300px;
+		padding: 20px;
+		flex-wrap: wrap;
+	}
+
+	.glassName {
+
+		height: 100px;
+		width: 200px;
+		font-size: 40px;
+		position: relative;
+		bottom: 180px;
+		left: 95px;
+
+	}
+
+	a > img {
+		width: 180px;
+		height: 180px;
+	}
+
+	.outer_box {
+		height: 1150px;
+	}
+
+
+}
+
+@media (max-width: 376px) {
+
+
+	.headerPicBox {
+		position: relative;
+		left: 30px;
+		top: 20px;
+		width: 300px;
+		height: 172px;
+	}
+
+	.headerPic {
+		width: 300px;
+		height: 172px;
+	}
+
+	.glassName {
+
+		height: 100px;
+		width: 200px;
+		font-size: 40px;
+		position: relative;
+		bottom: 150px;
+		left: 45px;
+
+	}
+
+	.outer_box {
+		height: 1065px;
+	}
+
+}
+
+@media (max-width: 321px) {
+	.headerPicBox {
+		position: relative;
+		left: 1px;
+		top: 0px;
+		width: 300px;
+		height: 172px;
+	}
+
+	.navigationBar {
+		width: 180px;
+	}
+}
