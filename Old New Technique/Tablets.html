@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Old/New technique</title>
+  <link rel="shortcut icon" href="images/free-icon-devices-115756.png" type="image/x-icon">
+  <link rel="stylesheet" href="console.css">
+ </head>
+ <body>
+
+    <div class="outer_box">        
+
+
+        <header>
+            
+            <div class="headerPicBox">
+
+                <img src="images/планшеты_главная.gif" class="headerPic">
+
+                <div class="glassName">
+
+                    <span>Tablets & screens</span>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <nav class="nav1" id="nav1">
+
+            <div class="navigationBar">
+
+                <a href="Mobile phones.html"><img src="images/телефон.gif" width="70" height="70"></a>
+                
+                <a href="Laptops.html"><img src="images/Компьютер_ссылка.gif" width="70" height="70"></a>
+
+                <a href="Приветственная_страница.html"><img src="images/главная_страница_ссылка.gif" width="70" height="70"></a>
+
+                <a href="game_console.html"><img src="images/приставка.gif" width="70" height="70"></a>
+
+            </div>
+
+        </nav>
+
+
+        <div class="menu-bar">
+
+            <button class="burger" id="burger">
+                <span></span>
+            </button>
+
+            <nav class="nav2" id="nav2">
+
+                <a href="Mobile phones.html" class="nav_link"><img src="images/телефон.gif"></a>
+                
+                <a href="Laptops.html" class="nav_link"><img src="images/Компьютер_ссылка.gif"></a>
+
+                <a href="Приветственная_страница.html" class="nav_link"><img src="images/главная_страница_ссылка.gif"></a>
+
+                <a href="game_console.html" class="nav_link"><img src="images/приставка.gif"></a>
+
+            </nav>
+
+        </div>
+
+    
+        <div class="glassbox">
+                
+            <div class="box_name">
+
+                <h2>Важные планшеты с 2010 по настоящее время</h2>
+
+            </div>
+
+            <div class="outer_box1">
+                    
+                <h3>Первое время существования</h3>
+
+                <div class="text">
+                    
+                    <p><img src="images/iPad1.jpg" class="pictures" width="225" height="225">iPad 1</p>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    <p><img src="images/Samsung-GALAXY-Tab-2-10.1_2.jpg" class="pictures" width="225" height="214">Samsung Galaxy Tab 2</p>
+
+                </div>
+
+            </div>
+
+            <div class="outer_box1">
+                    
+                <h3>Наши дни</h3>
+
+                <div class="text">
+                    
+                    <p><img src="images/iPadPro.jpg" class="pictures" width="225" height="145">iPad Pro 12.9 2020</p>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    <p><img src="images/huaweimatepad.jpg" class="pictures" width="225" height="150">Huawei MatePad 11</p>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    <p><img src="images/microsoftsurface.jpg" class="pictures" width="225" height="169">Microsoft Surface Pro</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <script>
+        const burger = document.querySelector("#burger");
+        const nav    = document.querySelector("#nav2");
+
+        burger.addEventListener("click", event => {
+        nav.classList.toggle("active");
+        burger.classList.toggle("active");
+        });
+    </script>
+    
+ </body>
+ </html>
